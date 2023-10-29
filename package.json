@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install-server":"npm install --prefix server",
+    "install-server": "npm install --prefix server",
     "install-client": "npm install --prefix client",
     "install": "npm run install-client && npm run install-server",
     "server": "npm run watch --prefix server",
-    "client":"npm start --prefix client",
-    "watch":"npm run client & npm run server",
+    "client": "npm start --prefix client",
+    "watch": "npm run client & npm run server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy":"npm run build --prefix client && npm start --prefix server"
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server"
   },
   "keywords": [],
   "author": "",
